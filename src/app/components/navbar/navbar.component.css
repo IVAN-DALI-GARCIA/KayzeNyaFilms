@@ -1,0 +1,24 @@
+.navbar {
+  box-shadow: 0 2px 8px 0 rgba(245, 244, 244, 0.308); /* Sombra blanca muy sutil abajo */
+}
+
+/*======================================================= */
+/* Estilos para el navbar */
+/*======================================================== */
+/* Estilos para la marca del navbar (logo y texto) */
+.navbar-brand {
+  font-weight: 500; /* Grosor del texto */
+  color: #ef2547 !important; /* Color principal de la marca */
+  letter-spacing: 1.7px; /* Espaciado entre letras */
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; /* Tipografía personalizada */
+  transition: all 0.5s ease-in-out; /* Transición suave */
+  z-index: 10;
+}
+
+/* Efecto hover para la marca del navbar */
+.navbar-brand:hover {
+  color: #f9f9f9 !important; /* Color al pasar el mouse */
+  letter-spacing: 2.5px; /* Más espacio entre letras al hacer hover */
+  text-shadow: 0 2px 8px #ef2547; /* Sombra de texto */
+  z-index: 102; /* Asegura que esté por encima de otros elementos */
+}

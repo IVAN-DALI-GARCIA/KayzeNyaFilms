@@ -1,0 +1,30 @@
+<div class="row">
+    <!-- Itera sobre el arreglo de películas y crea una columna para cada una -->
+    <div class="col-md-3 mb-5" *ngFor="let movie of movies">
+
+        <!-- Muestra el póster de la película, usando un pipe personalizado para la ruta -->
+        <!-- Al hacer clic en la imagen, se ejecuta el método onMovieCLick(movie) -->
+        <img [src]="movie.poster_path | poster" class="img-thumbnail img-fluid cursor" (click)="onMovieCLick(movie)">
+
+        <div>
+            <!-- Título de la película -->
+            <h3 class="mt-2">{{movie.title}}</h3>
+            <div class="row align-items-center">
+                <!-- Columna para las estrellas de calificación -->
+                <div class="col-10 text-white">
+                    <!-- Solo muestra las estrellas si existe un promedio de votos -->
+                    <div *ngIf="movie.vote_average">
+                        <div class="stars-container">
+                            <!-- Genera un ícono de estrella por cada valor retornado por getStars -->
+                            <i *ngFor="let star of getStars(movie.vote_average)" class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Columna para mostrar el promedio de votos numérico -->
+                <div class="col-2 text-white">
+                    {{movie.vote_average | number:'1.1-2'}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

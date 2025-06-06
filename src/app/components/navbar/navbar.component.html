@@ -1,0 +1,31 @@
+<!-- Barra de navegación principal -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <!-- Marca/logo de la barra de navegación, con ícono y enlace a la página principal -->
+  <a class="navbar-brand cursor" routerLink="/home">
+    <img src="assets/images/LOGOTIPO 40X40 FINAL.svg" alt="Logo" width="30" height="30"
+      class="d-inline-block align-top">
+    <!-- <i class="fas fa-film"></i> -->
+    KayzeNyaFilm
+  </a>
+  <!-- Botón para mostrar/ocultar el menú en pantallas pequeñas -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Contenedor colapsable del contenido de la barra de navegación -->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <!-- Aquí puedes agregar más elementos de navegación si lo necesitas -->
+    </ul>
+    <!-- Formulario de búsqueda de películas -->
+    <div class="form-inline my-2 my-lg-0">
+      <!-- Input para escribir el texto de búsqueda, ejecuta la búsqueda al presionar Enter -->
+      <input #txtBuscar class="form-control mr-sm-2" type="search" (keyup.enter)="buscarPelicula(txtBuscar.value)"
+        placeholder="Buscar Pelicula">
+      <!-- Botón para ejecutar la búsqueda al hacer clic -->
+      <button class="btn btn-outline-danger my-2 my-sm-0" type="submit"
+        (click)="buscarPelicula(txtBuscar.value)">Buscar</button>
+    </div>
+  </div>
+</nav>
