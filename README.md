@@ -188,16 +188,22 @@ Abre el archivo index.html en tu navegador preferido. Puedes hacerlo de las sigu
 ![Logotipo KayzeNyaFilm](https://github.com/IVAN-DALI-GARCIA/KayzeNyaFilm/blob/main/src/assets/images/DocumentacionImages/ice_screenshot_20250606-130439.png)
 
 ### Descripción de cómo PONER LAS LLAVES DE API en el proyecto para que pueda funcionar de manera correcta
+
 ###### Para que el proyecto Streaming KayzeNyaFilm funcione correctamente, es necesario configurar las claves de API de TMDB (The Movie Database). A continuación, se detallan los pasos para hacerlo:
+
 ##### **1. Obtener la clave de API de TMDB:**
+
 - Visita el sitio web de TMDB: [The Movie Database](https://www.themoviedb.org/).
 - Crea una cuenta si aún no tienes una.
 - Ve a tu perfil y selecciona "Configuración de la cuenta".
 - En la sección "API", solicita una clave de API siguiendo las instrucciones proporcionadas.
+
 ##### **2. Configurar la clave de API en el proyecto:**
+
 - Abre el proyecto en tu editor de código (por ejemplo, Visual Studio Code).
 - Navega al archivo `src/environments/environment.ts`.
 - Dentro de este archivo, encontrarás un objeto llamado `environment`. Agrega tu clave de API de TMDB en la propiedad `apiKey` como se muestra a continuación:
+
 ```typeScript
 export const environment = {
   production: false, // Indica si la aplicación está en modo producción
@@ -205,6 +211,7 @@ export const environment = {
     '************************************************************************', // Clave de API de TMDB para consumir los servicios (reemplaza por tu clave real)
 };
 ```
+
 ![Logotipo KayzeNyaFilm](https://github.com/IVAN-DALI-GARCIA/KayzeNyaFilm/blob/main/src/assets/images/DocumentacionImages/documentacion%203.png)
 ![Logotipo KayzeNyaFilm](https://github.com/IVAN-DALI-GARCIA/KayzeNyaFilm/blob/main/src/assets/images/DocumentacionImages/documentacion%202.png)
 
@@ -225,7 +232,48 @@ export const environment = {
 - Se realizaron ajustes en los estilos y la estructura para mejorar la usabilidad y la estética.
 - Este proyecto fue una excelente oportunidad para practicar habilidades de diseño y desarrollo frontend, enfocándome en la creación de una interfaz atractiva y funcional.
 
-##PROBLEMAS CONOCIDOS
+# Pruebas de funcionamiento del proyecto KayzeNyaFilm
+
+### Las pruebas de funcionamiento del proyecto KayzeNyaFilm se realizaron para asegurar que todas las funcionalidades y características implementadas funcionen correctamente. A continuación, se detallan las pruebas realizadas:
+
+#### **1. Pruebas de navegación:**
+
+- Se verificó que todos los enlaces de navegación (como el carrusel, botones y enlaces) funcionen correctamente y redirijan a las secciones adecuadas.
+
+#### **2. Pruebas de responsividad:**
+
+- Se probó el diseño en diferentes tamaños de pantalla (móviles, tabletas y escritorios) para asegurar que los elementos se ajusten correctamente y mantengan una buena usabilidad.
+
+#### **3. Pruebas de interactividad:**
+
+- Se verificó que los efectos de hover y las animaciones funcionen como se esperaba al pasar el mouse sobre los elementos interactivos.
+
+#### **4. Pruebas de tooltips:**
+
+- Se comprobó que los tooltips personalizados aparezcan correctamente al pasar el mouse sobre los iconos de favoritos y otros elementos con el atributo title.
+
+#### **5. Pruebas de carrusel:**
+
+- Se probó el carrusel de películas para asegurarse de que las imágenes se desplacen correctamente y que los elementos se alineen adecuadamente.
+
+![Logotipo KayzeNyaFilm](https://github.com/IVAN-DALI-GARCIA/KayzeNyaFilm/blob/feature/tests-home/src/assets/images/Pruebas%20de%20testing/ice_screenshot_20250610-224922.png)
+![Logotipo KayzeNyaFilm](https://github.com/IVAN-DALI-GARCIA/KayzeNyaFilm/blob/feature/tests-home/src/assets/images/Pruebas%20de%20testing/ice_screenshot_20250610-224917.png)
+![Logotipo KayzeNyaFilm](https://github.com/IVAN-DALI-GARCIA/KayzeNyaFilm/blob/feature/tests-home/src/assets/images/Pruebas%20de%20testing/ice_screenshot_20250610-224355.png)
+
+### QA (QUALITY ASSURANCE), es un proceso que garantiza la calidad del software a través de pruebas sistemáticas y revisión de código. En el proyecto KayzeNyaFilm, se implementaron las siguientes prácticas de QA:
+
+- **Revisión de código:** Se realizaron revisiones periódicas del código para asegurar que se siguieran las mejores prácticas y estándares de codificación.
+- **Pruebas unitarias:** Se implementaron pruebas unitarias para verificar el correcto funcionamiento de componentes y servicios individuales.
+- **Pruebas de integración:** Se realizaron pruebas de integración para asegurar que los diferentes componentes del sistema funcionen correctamente juntos.
+- **Pruebas de usabilidad:** Se llevaron a cabo pruebas de usabilidad para evaluar la experiencia del usuario y la facilidad de navegación en la aplicación.
+  ![Logotipo KayzeNyaFilm](https://github.com/IVAN-DALI-GARCIA/KayzeNyaFilm/blob/feature/tests-home/src/assets/images/Pruebas%20de%20testing/ice_screenshot_20250610-224349.png)
+- **Pruebas de rendimiento:** Se realizaron pruebas de rendimiento para evaluar la velocidad de carga y la capacidad de respuesta de la aplicación bajo diferentes condiciones.
+- **Pruebas de regresión:** Se llevaron a cabo pruebas de regresión para asegurarse de que las nuevas funcionalidades no afecten negativamente a las existentes.
+  ![Logotipo KayzeNyaFilm](https://github.com/IVAN-DALI-GARCIA/KayzeNyaFilm/blob/feature/tests-home/src/assets/images/Pruebas%20de%20testing/ice_screenshot_20250610-224308.png)
+  ![Logotipo KayzeNyaFilm](https://github.com/IVAN-DALI-GARCIA/KayzeNyaFilm/blob/feature/tests-home/src/assets/images/Pruebas%20de%20testing/ice_screenshot_20250610-224211.png)
+- **Documentación:** Se mantuvo una documentación clara y actualizada del proyecto, incluyendo instrucciones de uso, configuración y pruebas realizadas.
+
+# PROBLEMAS CONOCIDOS
 
 #### El desarrolllo del proyecto se detecto lo siguiente
 
@@ -261,7 +309,7 @@ export const environment = {
 - **Causa: **Los iconos <b> no estaban centrados en la parte inferior de las tarjetas de películas.
 - **Solución:** Se utilizó position: absolute;, bottom: 10px;, y transform: translateX(-50%); para centrar los iconos horizontalmente y posicionarlos correctamente.
 
-## RETROSPECTIVA DE PROYECTO
+# RETROSPECTIVA DE PROYECTO
 
 #### Retrospectiva del Proyecto
 
