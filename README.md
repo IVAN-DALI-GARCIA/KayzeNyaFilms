@@ -281,12 +281,12 @@ export const environment = {
 
 #### **1. Problema: Desalineación de elementos en el carrusel**
 
-- ** Causa: **Los elementos del carrusel no se alineaban correctamente debido a un mal uso de flexbox.
+- **Causa:**Los elementos del carrusel no se alineaban correctamente debido a un mal uso de flexbox.
 - **Solución:** Se ajustaron las propiedades display: flex; y align-items: center; en el contenedor principal del carrusel, asegurando que los elementos quedaran alineados horizontal y verticalmente.
 
 #### 2. Problema: Tooltips no visibles:
 
-- **Causa: **Los tooltips personalizados con pseudoelementos ::after no aparecían correctamente.
+- **Causa:**Los tooltips personalizados con pseudoelementos ::after no aparecían correctamente.
 - **Solución**: Se agregó position: relative; al elemento con el atributo title y z-index al tooltip para asegurarse de que estuviera por encima de otros elementos.
 
 #### 3. Problema: Imágenes del carrusel no escalaban correctamente:
@@ -306,7 +306,7 @@ export const environment = {
 
 #### 6. Problema: Iconos de favoritos mal posicionados
 
-- **Causa: **Los iconos <b> no estaban centrados en la parte inferior de las tarjetas de películas.
+- **Causa:**Los iconos <b> no estaban centrados en la parte inferior de las tarjetas de películas.
 - **Solución:** Se utilizó position: absolute;, bottom: 10px;, y transform: translateX(-50%); para centrar los iconos horizontalmente y posicionarlos correctamente.
 
 # RETROSPECTIVA DE PROYECTO
