@@ -53,7 +53,7 @@ I- mplementación de funcionalidad para agregar películas a favoritos.
 - Integración de un backend para gestionar datos dinámicos.
 - Mejora de la accesibilidad para usuarios con discapacidades.
 
-## # Vista del proyecto
+## Vista del proyecto
 
 **Este proyecto es ideal para aprender y practicar habilidades de desarrollo frontend, enfocándose en la creación de interfaces atractivas y funcionales.**
 
@@ -174,12 +174,11 @@ Abre el archivo index.html en tu navegador preferido. Puedes hacerlo de las sigu
 
 - **index.html:** Para modificar la estructura de la página.
 - **styles/styles.css:** Para cambiar los estilos visuales.
-- **imagenes: **Para reemplazar las imágenes del carrusel.
+- **imagenes:**Para reemplazar las imágenes del carrusel.
 
 ##### **6. Agregar nuevas funcionalidades (opcional)**
 
-**Puedes extender el proyecto agregando interactividad con JavaScript o integrando un backend para manejar datos dinámicos.
-**
+**Puedes extender el proyecto agregando interactividad con JavaScript o integrando un backend para manejar datos dinámicos.**
 
 #### ¡Disfruta explorando y personalizando el proyecto!
 
@@ -233,6 +232,8 @@ export const environment = {
 - Este proyecto fue una excelente oportunidad para practicar habilidades de diseño y desarrollo frontend, enfocándome en la creación de una interfaz atractiva y funcional.
 
 # Pruebas de funcionamiento del proyecto KayzeNyaFilm
+
+![Logotipo KayzeNyaFilm](https://github.com/IVAN-DALI-GARCIA/KayzeNyaFilm/blob/feature/tests-home/src/assets/images/Pruebas%20de%20testing/ice_screenshot_20250611-142053.png)
 
 ### Las pruebas de funcionamiento del proyecto KayzeNyaFilm se realizaron para asegurar que todas las funcionalidades y características implementadas funcionen correctamente. A continuación, se detallan las pruebas realizadas:
 
