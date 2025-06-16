@@ -1,0 +1,76 @@
+Table Usuarios {
+  UsuarioID int [pk, increment]
+  Nombre nvarchar(100) [not null]
+  Email nvarchar(100) [not null, unique]
+  PasswordHash nvarchar(255) [not null]
+  FechaRegistro datetime [default: `GETDATE()`]
+  EsActivo bit [default: 1]
+}
+
+Table Roles {
+  RolID int [pk, increment]
+  NombreRol nvarchar(50) [not null, unique]
+}
+
+Table UsuarioRoles {
+  UsuarioRolID int [pk, increment]
+  UsuarioID int [not null, ref: > Usuarios.UsuarioID]
+  RolID int [not null, ref: > Roles.RolID]
+}
+
+Table Peliculas {
+  PeliculaID int [pk, increment]
+  Titulo nvarchar(200) [not null]
+  Descripcion nvarchar(1000)
+  FechaEstreno date
+  Genero nvarchar(100)
+  ImagenUrl nvarchar(255)
+  EsSerie bit [default: 0]
+  EsRetro bit [default: 0]
+}
+
+Table Favoritos {
+  FavoritoID int [pk, increment]
+  UsuarioID int [not null, ref: > Usuarios.UsuarioID]
+  PeliculaID int [not null, ref: > Peliculas.PeliculaID]
+  FechaAgregado datetime [default: `GETDATE()`]
+}
+
+Table Sugeridos {
+  SugeridoID int [pk, increment]
+  UsuarioID int [not null, ref: > Usuarios.UsuarioID]
+  PeliculaID int [not null, ref: > Peliculas.PeliculaID]
+  FechaSugerido datetime [default: `GETDATE()`]
+}
+
+Table Top10 {
+  Top10ID int [pk, increment]
+  PeliculaID int [not null, ref: > Peliculas.PeliculaID]
+  Ranking int [not null]
+  FechaTop date [not null]
+}
+
+Table Nuevos {
+  NuevoID int [pk, increment]
+  PeliculaID int [not null, ref: > Peliculas.PeliculaID]
+  FechaAgregado datetime [default: `GETDATE()`]
+}
+
+Table MasVistos {
+  MasVistoID int [pk, increment]
+  PeliculaID int [not null, ref: > Peliculas.PeliculaID]
+  VecesVisto int [not null, default: 0]
+}
+
+Table Retro {
+  RetroID int [pk, increment]
+  PeliculaID int [not null, ref: > Peliculas.PeliculaID]
+  FechaRetro date
+}
+
+Table LoginLogs {
+  LogID int [pk, increment]
+  UsuarioID int [not null, ref: > Usuarios.UsuarioID]
+  FechaLogin datetime [default: `GETDATE()`]
+  Exitoso bit
+}

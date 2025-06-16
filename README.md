@@ -115,6 +115,42 @@ Incluye colores, tipografías, iconos y estilos para que el diseño sea más rea
 
 Revisar y ajustar: Asegúrate de que el diseño sea claro, funcional y atractivo.
 
+# Diseño de bases de datos para el proyecto KayzeNyaFilms
+
+### Para el diseño de la base de datos se uso el lenguaje de modelado DBML (Database Modeling Language) para crear un modelo relacional que represente las entidades y sus relaciones en el proyecto KayzeNyaFilm. 
+
+# Modelo de base de datos
+
+## Primero se genera el modelado de la base de datos en lenguaje DBML, DBML (Database Markup Language) es un lenguaje de marcado diseñado para describir la estructura de bases de datos de manera sencilla y legible. Permite definir tablas, campos, relaciones y otros elementos de una base de datos relacional usando una sintaxis clara y fácil de escribir, similar a Markdown.
+
+### Se utiliza principalmente para:
+
+- Diseñar y documentar bases de datos de manera visual.
+- Facilitar la colaboración entre desarrolladores y diseñadores de bases de datos.
+- Generar automáticamente esquemas de bases de datos a partir del código.
+- Convertir entre diferentes formatos de definición de bases de datos, como SQL, ORM (Object-Relational Mapping) y otros lenguajes de modelado.
+
+### Explicacion de Modelo de base de datos
+
+- El modelo esta diseñado para una plataforma de stremming de peliculas y series.
+- **Usuario** Gestiona la informacion de los usuarios registrados, incluyendo, nombre, correos, contraseñas y estado de activo.
+- **Roles**  Define los diferentes roles que pueden tener los usuarios, como administrador o usuario normal.
+- **Usuario_Roles** Establece la relacion entre los usuarios y sus roles, permitiendo asignar uno o varios roles a cada usuario.
+- **Peliculas_Generos** Establece la relacion entre las peliculas y sus generos, permitiendo asignar uno o varios generos a cada pelicula.
+- **Series_Generos** Establece la relacion entre las series y sus generos, permitiendo asignar uno o varios generos a cada serie.
+- **Favoritos** Almacena las peliculas y series favoritas de los usuarios, permitiendo que cada usuario tenga una lista personalizada de contenido preferido.
+- **Sugeridos** Almacena las peliculas y series sugeridas para cada usuario, basadas en sus preferencias y comportamiento de visualizacion.
+- **Nuevos** Almacena las peliculas y series nuevas que se han agregado recientemente a la plataforma, permitiendo a los usuarios descubrir contenido reciente.
+- **Mas Vistos** Almacena las peliculas y series mas vistas por los usuarios, permitiendo que los usuarios vean el contenido popular en la plataforma.
+- **retro Movies** Almacena las peliculas retro, permitiendo que los usuarios vean contenido clasico y nostálgico.
+- **Retro Series** Almacena las series retro, permitiendo que los usuarios vean contenido clasico y nostálgico.
+- **Peliculas** Almacena la informacion de las peliculas, incluyendo titulo, descripcion, fecha de estreno, genero, calificacion y estado de disponibilidad.
+- **Series** Almacena la informacion de las series, incluyendo titulo, descripcion, fecha de estreno, genero, calificacion y estado de disponibilidad.  
+- **Episodios** Almacena la informacion de los episodios de las series, incluyendo titulo, descripcion, numero de episodio, temporada y estado de disponibilidad.
+
+![Logotipo KayzeNyaFilm]()
+![Logotipo KayzeNyaFilm]()
+
 # INSTRUCCIONES DE USO
 
 ![Logotipo KayzeNyaFilm](https://github.com/IVAN-DALI-GARCIA/KayzeNyaFilm/blob/main/src/assets/images/DocumentacionImages/ice_screenshot_20250606-130439.png)

@@ -1,0 +1,26 @@
+Table Usuarios {
+  UsuarioID int [pk, increment]
+  Nombre nvarchar(100) [not null]
+  Email nvarchar(100) [not null, unique]
+  PasswordHash nvarchar(255) [not null]
+  FechaRegistro datetime [default: `GETDATE()`]
+  EsActivo bit [default: 1]
+}
+
+Table Roles {
+  RolID int [pk, increment]
+  NombreRol nvarchar(50) [not null, unique]
+}
+
+Table UsuarioRoles {
+  UsuarioRolID int [pk, increment]
+  UsuarioID int [not null, ref: > Usuarios.UsuarioID]
+  RolID int [not null, ref: > Roles.RolID]
+}
+
+Table LoginLogs {
+  LogID int [pk, increment]
+  UsuarioID int [not null, ref: > Usuarios.UsuarioID]
+  FechaLogin datetime [default: `GETDATE()`]
+  Exitoso bit
+}
