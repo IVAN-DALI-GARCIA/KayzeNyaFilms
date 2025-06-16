@@ -148,8 +148,8 @@ Revisar y ajustar: Asegúrate de que el diseño sea claro, funcional y atractivo
 - **Series** Almacena la informacion de las series, incluyendo titulo, descripcion, fecha de estreno, genero, calificacion y estado de disponibilidad.  
 - **Episodios** Almacena la informacion de los episodios de las series, incluyendo titulo, descripcion, numero de episodio, temporada y estado de disponibilidad.
 
-![Logotipo KayzeNyaFilm]()
-![Logotipo KayzeNyaFilm]()
+![Logotipo KayzeNyaFilm](https://github.com/IVAN-DALI-GARCIA/KayzeNyaFilms/blob/newMaster/src/app/databases/ice_screenshot_20250616-124957.png)
+![Logotipo KayzeNyaFilm](https://github.com/IVAN-DALI-GARCIA/KayzeNyaFilms/blob/newMaster/src/app/databases/ice_screenshot_20250616-134201.png)
 
 # INSTRUCCIONES DE USO
 
