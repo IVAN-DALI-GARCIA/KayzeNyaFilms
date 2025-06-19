@@ -1,0 +1,6 @@
+{
+  "dataworkspace.excludedProjects": [
+    "IvanDaliGarcia/IvanDaliGarcia.sqlproj",
+    "ivandali/ivandali.sqlproj"
+  ]
+}

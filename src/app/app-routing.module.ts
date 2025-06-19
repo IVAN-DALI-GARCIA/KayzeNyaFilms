@@ -7,6 +7,7 @@ import { BuscarComponent } from './pages/buscar/buscar.component'; // Componente
 // Definición de las rutas de la aplicación
 const routes: Routes = [
   { path: 'home', component: HomeComponent }, // Ruta para la página principal
+  { path: '', loadComponent: () => import ('./pages/home/home.component').then(m => m.HomeComponent) }, // Ruta para la página principal
   { path: 'pelicula/:id', component: PeliculaComponent }, // Ruta para ver detalles de una película por ID
   { path: 'buscar/:texto', component: BuscarComponent }, // Ruta para buscar películas por texto
 

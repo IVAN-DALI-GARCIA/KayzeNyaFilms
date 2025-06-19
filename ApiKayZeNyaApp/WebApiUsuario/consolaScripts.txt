@@ -1,0 +1,29 @@
+// Este script se utiliza para generar el modelo de Entity Framework Core a partir de una base de datos existente.
+// Asegúrate de tener instalado el paquete de 
+    - Microsoft.EntityFrameworkCore.SqlServer
+    - Microsoft.EntityFrameworkCore.Tools
+    - Microsoft.EntityFrameworkCore.sql
+
+ejecutamos esta linea en la consola del administrador de paquetes de Visual Studio o en la terminal de tu proyecto.
+En la raiz de tu proyecto donde esta el archivo .csproj, ejecuta el siguiente comando en la liena de comandos:
+
+dotnet ef dbcontext scaffold "Data Source=IVANDALIGARCIA;Database=KayzeNyaFilms;Trusted_Connection=True;TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer -o Models --force
+
+
+Se crea una carpeta llamada Models que contiene las clases generadas a partir de la base de datos.
+1.- Se paga la cadena de conexión a la base de datos en el archivo appsettings.json.
+
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "ConnectionStrings": {
+    "connectionDB": " AQUI PEGAMOS LA CADENA DE CONEXION A LA BASE DE DATOS         <=============================  "
+  },
+  "AllowedHosts": "*"
+}
+
+2.- EN el archivo que se creo con extension Context.cs borramosel codigo con el Warning para que no de error al compilar ya que no es necesario.
