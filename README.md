@@ -151,6 +151,21 @@ Revisar y ajustar: Asegúrate de que el diseño sea claro, funcional y atractivo
 ![Logotipo KayzeNyaFilm](https://github.com/IVAN-DALI-GARCIA/KayzeNyaFilms/blob/newMaster/src/app/databases/ice_screenshot_20250616-124957.png)
 ![Logotipo KayzeNyaFilm](https://github.com/IVAN-DALI-GARCIA/KayzeNyaFilms/blob/newMaster/src/app/databases/ice_screenshot_20250616-134201.png)
 
+# GENERACION DE API C# SWAGGER .NET API 
+### Se genera la base de datos en SQL Server y se crea una API RESTful utilizando C# y .NET Core. Esta API permite interactuar con la base de datos, proporcionando endpoints para realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre las entidades del modelo.
+
+### USUARIOS PARA LA APP.
+
+![Logotipo KayzeNyaFilm](https://github.com/IVAN-DALI-GARCIA/KayzeNyaFilms/blob/ApiMasSwagger/ApiKayZeNyaApp/Documentacion/ice_screenshot_20250618-225548.png)
+![Logotipo KayzeNyaFilm](https://github.com/IVAN-DALI-GARCIA/KayzeNyaFilms/blob/ApiMasSwagger/ApiKayZeNyaApp/Documentacion/ice_screenshot_20250618-225406.png)
+
+### Se usa swagger para documentar la API, lo que permite a los desarrolladores explorar y probar los endpoints de manera interactiva. Swagger proporciona una interfaz gráfica que facilita la comprensión de las operaciones disponibles, los parámetros requeridos y las respuestas esperadas.
+# Documentación del Proyecto KayzeNyaFilm
+![Logotipo KayzeNyaFilm](https://github.com/IVAN-DALI-GARCIA/KayzeNyaFilms/blob/ApiMasSwagger/ApiKayZeNyaApp/Documentacion/ice_screenshot_20250618-233146.png)
+![Logotipo KayzeNyaFilm](https://github.com/IVAN-DALI-GARCIA/KayzeNyaFilms/blob/ApiMasSwagger/ApiKayZeNyaApp/Documentacion/ice_screenshot_20250618-233152.png)
+![Logotipo KayzeNyaFilm](https://github.com/IVAN-DALI-GARCIA/KayzeNyaFilms/blob/ApiMasSwagger/ApiKayZeNyaApp/Documentacion/ice_screenshot_20250619-002448.png)
+
+
 # INSTRUCCIONES DE USO
 
 ![Logotipo KayzeNyaFilm](https://github.com/IVAN-DALI-GARCIA/KayzeNyaFilm/blob/main/src/assets/images/DocumentacionImages/ice_screenshot_20250606-130439.png)
